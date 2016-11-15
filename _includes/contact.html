@@ -5,10 +5,10 @@
 	<p>{{ site.contactTagline }}</p>
 	<ul class="contact">
 		{% if site.email %}
-		<li class="fa-envelope-o"><a href="#">{{ site.email }}</a></li>
+		<li class="fa-envelope-o"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
 		{% endif %}
 		{% if site.phone %}
-		<li class="fa-phone">{{ site.phone }}</li>
+		<li class="fa-phone"><a href="mailto:{{ site.email }}">{{ site.phone }}</a></li>
 		{% endif %}
 		{% if site.address %}
 		<li class="fa-home">{{ site.address }}</li>
