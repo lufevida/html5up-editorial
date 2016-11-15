@@ -4,8 +4,14 @@
 	</header>
 	<p>{{ site.contactTagline }}</p>
 	<ul class="contact">
-		<li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-		<li class="fa-phone">(000) 000-0000</li>
-		<li class="fa-home">1234 Somewhere Road #8254<br />Nashville, TN 00000-0000</li>
+		{% if site.email %}
+		<li class="fa-envelope-o"><a href="#">{{ site.email }}</a></li>
+		{% endif %}
+		{% if site.phone %}
+		<li class="fa-phone">{{ site.phone }}</li>
+		{% endif %}
+		{% if site.address %}
+		<li class="fa-home">{{ site.address }}</li>
+		{% endif %}
 	</ul>
 </section>
