@@ -3,36 +3,25 @@
 <html>
 	{% include head.html %}
 	<body>
-
 		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-
-							<!-- Header -->
-							{% include header.html %}
-
-							<!-- Banner -->
-							{% include banner.html %}
-
-							<!-- Featurette -->
-							{% include featurette.html %}
-
-							<!-- Posts -->
-							{% include posts.html %}
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-				{% include sidebar.html %}
-
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<!-- Header -->
+					{% include header.html %}
+					<!-- Banner -->
+					{% include banner.html %}
+					<!-- Featurette -->
+					{% include featurette.html %}
+					<!-- Posts -->
+					{% include posts.html %}
+				</div>
 			</div>
-
+			<!-- Sidebar -->
+			{% include sidebar.html %}
+		</div>
 		<!-- Scripts -->
 		{% include scripts.html %}
-
 	</body>
 </html>
