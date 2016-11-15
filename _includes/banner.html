@@ -5,8 +5,9 @@
 			<p>{{ site.bannerTagline }}</p>
 		</header>
 		<p>{{ site.bannerDescription }}</p>
+		{% if site.bannerButtonTitle %}
 		<ul class="actions">
-			<li><a href="#" class="button big">Learn More</a></li>
+			<li><a href="{{ site.bannerButtonLink }}" class="button big">{{ site.bannerButtonTitle }}</a></li>
 		</ul>
 	</div>
 	<span class="image object">
