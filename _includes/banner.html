@@ -2,7 +2,7 @@
 	<div class="content">
 		<header>
 			<h1>{{ site.bannerTitle }}</h1>
-			<p>{{ bannerTagline }}</p>
+			<p>{{ site.bannerTagline }}</p>
 		</header>
 		<p>{{ site.bannerDescription }}</p>
 		<ul class="actions">
@@ -10,6 +10,6 @@
 		</ul>
 	</div>
 	<span class="image object">
-		<img src="images/pic10.jpg" alt="" />
+		<img src="{{ site.bannerImage }}" alt="" />
 	</span>
 </section>
