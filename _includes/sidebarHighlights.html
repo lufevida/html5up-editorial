@@ -6,7 +6,7 @@
 	{% for my_post in site.posts %}
 		{% if my_post.showOnHighlights == true %}
 		<article>
-			<a href="{{ my_post.url | prepend: site.baseurl }}" class="image"><img src="{{ my_post.image }}" alt="" /></a>
+			<a href="{{ my_post.url | prepend: site.baseurl }}" class="image"><img src="{{ my_post.image | prepend: site.baseurl }}" alt="" /></a>
 			<h3>{{ my_post.title }}</h3>
 			<p>{{ my_post.tagline }}</p>
 			<ul class="actions">
