@@ -5,10 +5,11 @@
 			<p>{{ site.bannerTagline }}</p>
 		</header>
 		<p>{{ site.bannerDescription }}</p>
-		{% if site.bannerButtonTitle %}
+		{% if site.bannerButton == true %}
 		<ul class="actions">
-			<li><a href="{{ site.bannerButtonLink }}" class="button big">{{ site.bannerButtonTitle }}</a></li>
+			<li><a href="{{ site.bannerButtonLink }}" class="button big">Learn More</a></li>
 		</ul>
+		{% endif %}
 	</div>
 	<span class="image object">
 		<img src="{{ site.bannerImage }}" alt="" />
