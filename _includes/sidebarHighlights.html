@@ -7,12 +7,13 @@
 		{% if my_post.showOnHighlights == true %}
 		<article>
 			<a href="{{ my_post.url | prepend: site.baseurl }}" class="image"><img src="{{ my_post.image }}" alt="" /></a>
+			<h3>{{ my_post.title }}</h3>
 			<p>{{ my_post.tagline }}</p>
+			<ul class="actions">
+				<li><a href="{{ my_post.url | prepend: site.baseurl }}" class="button">More</a></li>
+			</ul>
 		</article>
 		{% endif %}
 	{% endfor %}		
 	</div>
-	<ul class="actions">
-		<li><a href="#" class="button">More</a></li>
-	</ul>
 </section>
