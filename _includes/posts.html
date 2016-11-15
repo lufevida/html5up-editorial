@@ -5,11 +5,11 @@
 	<div class="posts">
 	{% for a_post in site.posts %}
 		<article>
-			<a href="{{ a_post.url | prepend: site.baseurl}}" class="image"><img src="{{ a_post.image }}" alt="" /></a>
+			<a href="{{ a_post.url | prepend: site.baseurl }}" class="image"><img src="{{ a_post.image }}" alt="" /></a>
 			<h3>{{ a_post.title }}</h3>
 			<p>{{ a_post.tagline }}</p>
 			<ul class="actions">
-				<li><a href="{{ a_post.url | prepend: site.baseurl}}" class="button">Learn More</a></li>
+				<li><a href="{{ a_post.url | prepend: site.baseurl }}" class="button">Learn More</a></li>
 			</ul>
 		</article>
 	{% endfor %}
