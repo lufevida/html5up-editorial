@@ -3,7 +3,7 @@
 		<h2>Menu</h2>
 	</header>
 	<ul>
-		<li><a href="index.html">Home</a></li>
+		<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
 		{% for my_page in site.pages %}
 			{% if my_page.showOnMenu == true %}
 				<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title}}</a></li>
