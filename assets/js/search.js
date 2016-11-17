@@ -41,7 +41,6 @@
       this.field('id');
       this.field('title', { boost: 10 });
       this.field('author');
-      this.field('category');
       this.field('content');
     });
 
@@ -50,7 +49,6 @@
         'id': key,
         'title': window.store[key].title,
         'author': window.store[key].author,
-        'category': window.store[key].category,
         'content': window.store[key].content
       });
 
