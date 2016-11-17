@@ -1,6 +1,6 @@
 (function() {
   function displaySearchResults(results, store) {
-    var searchResults = document.getElementById('search-results');
+    var searchResults = document.getElementById('query');
 
     if (results.length) { // Are there any results?
       var appendString = '';
