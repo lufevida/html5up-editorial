@@ -6,6 +6,8 @@ layout: default
 	<header class="main">
 		<h1>{{ page.title }}</h1>
 	</header>
+	{% if page.wideImage %}
 	<span class="image main"><img src="{{ site.baseurl }}/{{ page.wideImage }}" alt="" /></span>
+	{% endif %}
 	{{ content }}
 </section>
